@@ -1,5 +1,6 @@
 {{ $currentPageUrl := .RelPermalink }}
 {{ if .Params.series }}
+{{ if ne ($.Site.Params.maxSeeAlsoItems) 0 }}
 <section class="see-also">
   {{ range .Params.series }}
     {{ $name := . | urlize }}
@@ -21,4 +22,5 @@
     {{ end }}
   {{ end }}
 </section>
+{{ end }}
 {{ end }}
