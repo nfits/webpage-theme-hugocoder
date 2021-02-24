@@ -19,6 +19,34 @@
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
+  .navigation-title-abbreviation {
+    display: none;
+  }
+
+  @media (max-width: 450px) {
+    .navigation-title {
+      display: none;
+    }
+    .navigation-title-abbreviation {
+      display: inherit;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 970px) {
+    .navigation-title {
+      display: none;
+    }
+    .navigation-title-abbreviation {
+      display: inherit;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+  }
+
   .navigation-list {
     float: right;
     list-style: none;

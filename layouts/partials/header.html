@@ -32,6 +32,9 @@
         {{ end }}
       </ul>
     {{ end }}
+    <a class="navigation-title-abbreviation" href="{{ .Site.BaseURL | relLangURL }}">
+      {{ .Site.Params.abbreviation }}
+    </a>
     <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
       {{ .Site.Title }}
     </a>
